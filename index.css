@@ -1,0 +1,138 @@
+
+.card{
+    width: 30%;
+    background: linear-gradient(135deg, orange,blue);
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background:linear-gradient(275deg,);
+    border-radius: 30px;
+    color:black;
+    height: 60px;
+    flex: 1;
+    padding: 10px 25px;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    border-radius: 50%;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 60%;
+}
+.weather-icon{
+    width:170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 81px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    text-align: center;
+    align-items: left;
+}
+.col img{
+    width: 70px;
+    margin-right: 10px;
+}
+.humidity,.wind{
+    margin-top: -6px;
+    font-size: 28px;
+}
+.weather{
+    display: none;
+}
+.error{
+    display: none;
+    margin-left: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: left;
+    text-decoration: underline;
+}
+@media (min-width:401px) and (orientation:portrait) and (max-width:500px){
+    .card{
+        width:80%;
+        margin:0 auto;
+        border-radius: 3px;
+        height: 100vh;
+    }
+    .search input{
+        width: 80%;
+        border-radius: 10px;
+    }
+    .col{
+        padding:0 10px;
+    }
+
+}
+@media (min-width:501px) and (orientation:portrait) and (max-width:1000px){
+    .card{
+        width:90%;
+        height: 100vh;
+        margin:0 auto;
+        border-radius: 3px;
+    }
+    .search input{
+        width: 90%;
+        border-radius: 10px;
+    }
+    .col{
+        padding:0 10px;
+    }
+
+}
+@media (min-width:0) and (orientation:portrait) and (max-width:400px){
+    .card{
+        width:80%;
+        margin:0 auto;
+        border-radius: 3px;
+        height: 120%;
+    }
+    .search input{
+        width: 80%;
+        border-radius: 10px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        padding:20px 6px;
+    }
+    .col div{
+        padding-bottom: 0px;
+    }
+
+}
